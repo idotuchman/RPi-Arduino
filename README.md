@@ -2,7 +2,7 @@
 Heavily based on [this link](http://spellfoundry.com/sleepy-pi/setting-arduino-ide-raspbian/)
 
 ### Turn off RPi's serial monitor  
-'sudo raspi-config', Advanced Settings --> Serial Monitor --> Off
+`sudo raspi-config`, Advanced Settings --> Serial Monitor --> Off
 
 ### Set up GPIO pins
 If using a 5V Arduino, use a level shifter or voltage divider on RXD pin  
