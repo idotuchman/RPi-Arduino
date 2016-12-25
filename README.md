@@ -1,14 +1,16 @@
 ## GPIO Serial to Arduino
 Based on [this link](http://spellfoundry.com/sleepy-pi/setting-arduino-ide-raspbian/)
 
+### Set up GPIO pins
+If using a 5V Arduino, use a level shifter or voltage divider on RXD pin
+| RPi GPIO Pin      | GPIO Pin Name   | Arduino Pin   | Arduino Pin Name  |
+|-------------------|-----------------|---------------|-------------------|
+| GPIO 14           | TXD             | 0             | RX                |
+| GPIO 15           | RXD             | 1             | TX                |
+| GPIO 22           | Reset           | Reset         | Reset             |
+
 ### Turn off RPi's serial monitor  
 `sudo raspi-config`, Advanced Settings --> Serial Monitor --> Off
-
-### Set up GPIO pins
-If using a 5V Arduino, use a level shifter or voltage divider on RXD pin  
-GPIO 14: TXD  
-GPIO 15: RXD  
-GPIO 22: Reset
 
 ### Link the Serial port to GPIO
 In `/etc/udev/rules.d/`, create `80-pi-arduino.rules` file with the following:
