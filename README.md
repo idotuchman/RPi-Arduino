@@ -5,7 +5,7 @@ Based on [this link](http://spellfoundry.com/sleepy-pi/setting-arduino-ide-raspb
 If using a 5V Arduino, use a level shifter or voltage divider on RXD pin
 
 | RPi GPIO Pin      | GPIO Pin Name   | Arduino Pin   | Arduino Pin Name  |
-|-------------------|-----------------|---------------|-------------------|
+| ----------------- | --------------- | ------------- | ----------------- |
 | GPIO 14           | TXD             | 0             | RX                |
 | GPIO 15           | RXD             | 1             | TX                |
 | GPIO 22           | Reset           | Reset         | Reset             |
