@@ -19,3 +19,4 @@ In `/etc/udev/rules.d/`, create `80-pi-arduino.rules` file with the following:
 KERNEL=="ttyAMA0", SYMLINK+="ttyS0",GROUP="dialout",MODE:=0666
 KERNEL=="ttyACM0", SYMLINK+="ttyS1",GROUP="dialout",MODE:=0666
 ```
+Licensed under a Creative Commons Attribution 4.0 International License.
